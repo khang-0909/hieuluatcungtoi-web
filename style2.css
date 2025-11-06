@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #f4f6f9; /* nền sáng kiểu hành chính */
+  color: #1a1a1a;
+  text-align: center;
+}
+
+/* HEADER */
+header {
+  background-image: url("https://images.unsplash.com/photo-1605721911519-3dfeb3be25e4?auto=format&fit=crop&w=1600&q=80");
+  background-size: cover;
+  background-position: center;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
+  border-bottom: 5px solid #0a4b78; /* viền xanh đậm kiểu pháp luật */
+}
+
+/* Tiêu đề */
+header h1 {
+  font-size: 3em;
+  font-weight: bold;
+  margin: 0;
+  color :red;
+}
+h2,h3{
+text-decoration:underline;}
+
+
+	p {
+  margin-bottom: 15px;                        /* Khoảng cách giữa các đoạn */
+  text-align: justify;                        /* Căn đều hai bên (đẹp hơn khi đọc) */
+}
