@@ -23,12 +23,12 @@ voiceButton.addEventListener("click", () => {
     result.textContent = `🔎 Bạn nói: "${transcript}"`;
 
     // --- Điều hướng sang trang con ---
-    if (transcript.includes("hôn nhân")) {
-      window.location.href = "hon-nhan.html";
-    } else if (transcript.includes("hình sự")) {
-      window.location.href = "hinh-su.html";
-    } else if (transcript.includes("dân sự")) {
-      window.location.href = "dan-su.html";
+    if (transcript.includes("thuế doanh nghiệp")) {
+      window.location.href = "thuedoanhnghiep.html";
+    } else if (transcript.includes("luật trẻ em")) {
+      window.location.href = "treem.html";
+    } else if (transcript.includes("luật người khuyết tật")) {
+      window.location.href = "khuyettat.html";
     } else {
       result.textContent += " — Không tìm thấy trang phù hợp!";
     }
@@ -38,3 +38,4 @@ voiceButton.addEventListener("click", () => {
     result.textContent = "⚠️ Có lỗi xảy ra, vui lòng thử lại!";
   };
 });
+
