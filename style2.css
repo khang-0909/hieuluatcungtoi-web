@@ -3,7 +3,7 @@ body {
   font-family: "Segoe UI", Arial, sans-serif;
   background-color: #f4f6f9; /* nền sáng kiểu hành chính */
   color: #1a1a1a;
-  text-align: center;
+  text-align: left; /* toàn bộ văn bản căn trái */
 }
 
 /* HEADER */
@@ -14,52 +14,41 @@ header {
   height: 350px;
   display: flex;
   flex-direction: column;
-  justify-content: left {
-  margin: 0;
-  font-family: "Segoe UI", Arial, sans-serif;
-  background-color: #f4f6f9; /* nền sáng kiểu hành chính */
-  color: #1a1a1a;
-  text-align: center;
-}
-
-/* HEADER */
-header {
-  background-image: url("https://images.unsplash.com/photo-1605721911519-3dfeb3be25e4?auto=format&fit=crop&w=1600&q=80");
-  background-size: cover;
-  background-position: center;
-  height: 350px;
-  display: flex;
-  flex-direction: column;
-  justify-content: left;
-  align-items: left;
+  justify-content: center; /* căn trên */
+  align-items: center;     /* căn trái */
   color: white;
   text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
   border-bottom: 5px solid #0a4b78; /* viền xanh đậm kiểu pháp luật */
+  padding: 30px; /* khoảng cách từ trái và trên */
 }
 
 /* Tiêu đề */
 header h1 {
   font-size: 3em;
   font-weight: bold;
-  margin: 0;
-  color :red;
-}
-h2,h3{
-text-decoration:underline;
-text-align: left;
-color:red;}
-
-
-	p {
-  margin-bottom: 15px;                        /* Khoảng cách giữa các đoạn */
-  text-align: left;                        /* Căn đều hai bên (đẹp hơn khi đọc) */
-
+  margin: 0 0 15px 0;
+  color: red; /* có thể đổi thành trắng nếu muốn nổi bật hơn */
 }
 
+/* Các tiêu đề phụ */
+h2, h3 {
+  text-decoration: underline;
+  color: red;
+  margin-bottom: 10px;
+}
+
+/* Đoạn văn */
+p {
+  margin-bottom: 15px;
+  text-align: left; /* căn trái */
+}
+
+/* Search box */
 .search-box {
   margin-top: 20px;
 }
 
+/* Input và nút */
 input {
   padding: 10px;
   width: 280px;
@@ -77,6 +66,8 @@ button {
   border-radius: 4px;
   cursor: pointer;
 }
+div{
+text-align: center;}
 
 button:hover {
   background-color: #0c5d91;
@@ -89,6 +80,5 @@ footer {
   padding: 15px 0;
   margin-top: 40px;
   font-size: 0.9em;
+  text-align: center;
 }
-
-
