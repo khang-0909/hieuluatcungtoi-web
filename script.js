@@ -9,10 +9,10 @@ function navigateToPage(keyword) {
   keyword = keyword.toLowerCase();
   if (keyword.includes("thuế doanh nghiệp")) {
     window.location.href = "thuedoanhnghiep.html";
-  } else if (keyword.includes("hình sự")) {
-    window.location.href = "hinh-su.html";
-  } else if (keyword.includes("dân sự")) {
-    window.location.href = "dan-su.html";
+  } else if (keyword.includes("luật người khuyết tật")) {
+    window.location.href = "khuyettat.html";
+  } else if (keyword.includes("luật trẻ em")) {
+    window.location.href = "treem.html";
   } else {
     result.textContent = "— Không tìm thấy trang phù hợp!";
   }
@@ -54,3 +54,4 @@ searchButton.addEventListener("click", () => {
   }
   navigateToPage(query);
 });
+
