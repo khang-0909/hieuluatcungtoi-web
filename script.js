@@ -1,10 +1,10 @@
-// --- Bắt đầu nhận dạng giọng nói ---
+
 const voiceButton = document.getElementById("voiceButton");
 const searchInput = document.getElementById("searchInput");
-const searchButton = document.getElementById("searchButton"); // nút tìm kiếm bằng chữ
+const searchButton = document.getElementById("searchButton"); 
 const result = document.getElementById("result");
 
-// --- Hàm điều hướng sang trang ---
+
 function navigateToPage(keyword) {
   keyword = keyword.toLowerCase();
   if (keyword.includes("thuế doanh nghiệp")) {
@@ -18,7 +18,7 @@ function navigateToPage(keyword) {
   }
 }
 
-// --- Nhận dạng giọng nói ---
+
 voiceButton.addEventListener("click", () => {
   if (!('webkitSpeechRecognition' in window)) {
     alert("Trình duyệt của bạn không hỗ trợ nhận dạng giọng nói!");
@@ -37,7 +37,7 @@ voiceButton.addEventListener("click", () => {
     const transcript = event.results[0][0].transcript;
     searchInput.value = transcript;
     result.textContent = `🔎 Bạn nói: "${transcript}"`;
-    navigateToPage(transcript); // sử dụng hàm chung
+    navigateToPage(transcript); 
   };
 
   recognition.onerror = function() {
@@ -45,7 +45,7 @@ voiceButton.addEventListener("click", () => {
   };
 });
 
-// --- Tìm kiếm bằng chữ ---
+
 searchButton.addEventListener("click", () => {
   const query = searchInput.value.trim();
   if (!query) {
@@ -54,4 +54,5 @@ searchButton.addEventListener("click", () => {
   }
   navigateToPage(query);
 });
+
 
