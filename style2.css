@@ -1,12 +1,12 @@
 body {
   margin: 0;
   font-family: "Segoe UI", Arial, sans-serif;
-  background-color: #f4f6f9; /* nền sáng kiểu hành chính */
+  background-color: #f4f6f9; 
   color: #1a1a1a;
-  text-align: left; /* toàn bộ văn bản căn trái */
+  text-align: left; 
 }
 
-/* HEADER */
+
 header {
   background-image: url("https://images.unsplash.com/photo-1605721911519-3dfeb3be25e4?auto=format&fit=crop&w=1600&q=80");
   background-size: cover;
@@ -14,41 +14,41 @@ header {
   height: 350px;
   display: flex;
   flex-direction: column;
-  justify-content: center; /* căn trên */
-  align-items: center;     /* căn trái */
+  justify-content: center; 
+  align-items: center;    
   color: white;
   text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
-  border-bottom: 5px solid #0a4b78; /* viền xanh đậm kiểu pháp luật */
-  padding: 30px; /* khoảng cách từ trái và trên */
+  border-bottom: 5px solid #0a4b78; 
+  padding: 30px;
 }
 
-/* Tiêu đề */
+
 header h1 {
   font-size: 3em;
   font-weight: bold;
   margin: 0 0 15px 0;
-  color: red; /* có thể đổi thành trắng nếu muốn nổi bật hơn */
+  color: red; 
 }
 
-/* Các tiêu đề phụ */
+
 h2, h3 {
   text-decoration: underline;
   color: red;
   margin-bottom: 10px;
 }
 
-/* Đoạn văn */
+
 p {
   margin-bottom: 15px;
-  text-align: left; /* căn trái */
+  text-align: left; 
 }
 
-/* Search box */
+
 .search-box {
   margin-top: 20px;
 }
 
-/* Input và nút */
+
 input {
   padding: 10px;
   width: 280px;
@@ -61,7 +61,7 @@ button {
   padding: 10px 20px;
   font-size: 16px;
   color: white;
-  background-color: #0a4b78; /* màu chủ đạo xanh pháp luật */
+  background-color: #0a4b78; 
   border: none;
   border-radius: 4px;
   cursor: pointer;
@@ -73,7 +73,7 @@ button:hover {
   background-color: #0c5d91;
 }
 
-/* FOOTER */
+
 footer {
   background-color: #0a4b78;
   color: white;
@@ -82,3 +82,4 @@ footer {
   font-size: 0.9em;
   text-align: center;
 }
+
